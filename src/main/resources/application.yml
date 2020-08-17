@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    database1:
+      url: jdbc:mysql://121.199.47.205:3306/test_db_1?useUnicode=true&CharSet=utf8mb4&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&autoReconnectForPools=true&rewriteBatchedStatements=true&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+      driverClassName: com.mysql.cj.jdbc.Driver
+    database2:
+      url: jdbc:mysql://121.199.47.205:3306/test_db_2?useUnicode=true&CharSet=utf8mb4&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&autoReconnectForPools=true&rewriteBatchedStatements=true&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+      driverClassName: com.mysql.cj.jdbc.Driver
+
+
+  jpa:
+    hibernate:
+      ddlAuto: update
+    databasePlatform: org.hibernate.dialect.MySQL5InnoDBDialect
+    showSql: true
